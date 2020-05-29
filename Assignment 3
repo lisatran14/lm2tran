@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+      <meta name="viewport" content="width-device-width">
+    <title>Seamless MD</title>
+</head>
+<body>
+
+    <h1 style="text-align:center;">Assignment #3</h1>
+      <p style="color:rebeccapurple;"> Parsing a JSON file in Phython to display patient information in HTML</p>
+    <iframe src="https://trinket.io/embed/python/55c03589fe?toggleCode=true&runOption=run&start=result&showInstructions=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+</body>
+</html>
