@@ -1,2 +1,4 @@
 # lm2tran
-Using Python to parse a JSON file and to display Patient Information in HTML
+Please view "HTML" for my submission for Assignment 3.
+//
+Initally "Assignment 3" was created but it uses Python first to parse a JSON file and then displays it in HTML.
