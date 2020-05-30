@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <title>SeamlessMD</title>
+<h1>Patient Profile</h1>
+<script>
+var patient = {
+  "resourceType": "Patient",
+  "id": "xcda",
+  "text": {
+    "status": "generated",
+    "div": "\n      \n      <p>Henry Levin the 7th</>\n    \n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "htt://hl7.org/fhir/v2/0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "urn:oid:2.16.840.1.113883.19.5",
+      "value": "12345"
+  ,
+  "active": true,
+  "name": [
+    {
+      "family": [
+        "Levin"
+      ],
+      "given": [
+        "Henry"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2002-09-24",
+  "managingOrganization": {
+    "reference": "Organization/2.16.840.1.113883.19.5",
+    "display": "University Health Network"
+  },
+  "conditions": [
+    "Diabetes",
+    "High blood pressure",
+    "Asthma"]
+	}
+  ]
+}
+
+document.write("Name of patient: " + patient.identifier[0].name[0].given + " " + patient.identifier[0].name[0].family);
+document.write("<br>");
+
+document.write("Organization name: " + patient.identifier[0].managingOrganization.display);
+document.write("<br>");
+
+document.write("Gender: " + patient.identifier[0].gender);
+document.write("<br>");
+
+var condition_number = (patient.identifier[0].conditions).length;
+document.write("Number of conditions they have: " + condition_number);
+document.write("<br>");
+
+document.write("List of all conditions: ");
+document.write("<br>");
+var c;
+for (c = 0; c < condition_number; ++c) {
+  document.write("<li>");
+  document.write(patient.identifier[0].conditions[c]);
+}
+
+</script>
+</html>
